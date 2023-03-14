@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <form >
+        <input type="button" value="-" onclick="dec()">
+        <input id="a" value="0">
+        <input type="button" value="+" onclick="inc()" >
+        <input type="submit">
+    </form>
+    <script>
+        var number = 0;
+        function inc()
+        {
+            if(number>=0 & number<20)
+            {
+                number++;
+                document.getElementById("a").value=number
+            }
+        }
+        function dec()
+        {
+            if(number>0 & number<=20)
+            {
+                number--;
+                document.getElementById("a").value=number
+            }
+        }
+    </script>
+</body>
+</html>

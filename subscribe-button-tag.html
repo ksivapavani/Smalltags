@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        input{
+            box-shadow: 2px 2px 2px black;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <input type="button" value="subscribe" id="a" onclick="fun()">
+    <br>
+    <input type="button" value="SUBSCRIBED" id="b" onclick="fun1()" >
+    <script>
+        function fun()
+        {
+            document.getElementById("a").style.backgroundColor="grey"
+            document.getElementById("a").style.color="white"
+            
+
+        }
+        function fun1()
+        {
+            document.getElementById("b").style.backgroundColor="red"
+            document.getElementById("b").style.color="grey"
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+   #a{
+        width: 300px;
+        height: 80px;
+        background-color: red;
+        border: none;
+        box-shadow: 2px 2px 5px black;
+        font-weight: 2px;
+        font-size: medium;
+   }
+    </style>
+</head>
+<body>
+    <input type="button" value="SUBSCRIBE" id="a" onclick="fun()">
+    <script>
+        function fun()
+        {
+            var a= document.getElementById("a").value
+            if(a==value)
+            {
+                document.getElementById("a").style.backgroundColor="grey"
+                document.getElementById("a").setAttribute("value","SUBSCRIBE")
+            }
+            else
+            {
+                document.getElementById("a").style.backgroundColor="red"
+                document.getElementById("a").setAttribute("value","SUBSCRIBED")
+            }  
+
+        }
+        </script> 
+</body>
+</html>

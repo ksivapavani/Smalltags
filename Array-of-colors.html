@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body id="a" onload="party()">
+    <script>
+        function party(){
+           
+        var color = ["red","blue","pink","orange","maroon","purple","black",]
+
+        var colorlength = color.length
+
+        var randonnumber = Math.random()*colorlength
+
+        var justnumber = Math.floor(randonnumber)
+
+        document.getElementById("a").style.backgroundColor = color[justnumber]
+
+        var refresh = setTimeout(function(){party()},100)
+        
+        }
+        
+    </script>
+</body>
+</html>

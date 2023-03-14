@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            transition: all 1s;
+            /*background-image: 100% 120px;*/
+        }
+        #header
+        {
+            width: 100%;
+            background-color: transparent;
+            background-image: url(./a.jpg);
+            height: 700px;
+            background-size: 100% 700px;
+            background-repeat: no-repeat;
+        }
+        #left
+        {
+           position: absolute;
+           top: 350px; 
+        }
+        #right
+        {
+           position: absolute;
+           left: 95%; 
+           top: 350px;
+        }
+        .b{
+            font-size: 80px;
+            border: none;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <input type="button" class="b" id="left" value="<" onclick="decrement()">
+        <input type="button" class="b" id="right" value=">" onclick="increment()">
+    </div>
+   <script>
+     var images = ["a.jpg","b.jpg","c.jpg","d.jpg","e.jpg","f.jpg"]
+      var indexvalue = 0;
+      function increment()
+      {
+        indexvalue++;
+        document.getElementById("header").style.backgroundImage = "url("+images[indexvalue]+")"
+      }
+      function decrement()
+      {
+        indexvalue--;
+        document.getElementById("header").style.backgroundImage = "url("+images[indexvalue]+")"
+      }
+   </script> 
+</body>
+</html>

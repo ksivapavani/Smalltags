@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Document</title>
+</head>
+<body>
+    <select id="a" onchange="fun()">
+        <option value="Office">--choose your work location--</option>
+        <option >Hyderbad</option>
+        <option >Chennai</option>
+        <option>Mumbai</option>
+        <option >Banglore</option>
+    </select>
+    <h1 id="b"></h1>
+    <script>
+        function fun()
+        {
+            var loc = document.getElementById("a").value
+            document.getElementById("b").innerHTML="i love to work in "+loc
+        }
+    </script>
+</body>
+</html>

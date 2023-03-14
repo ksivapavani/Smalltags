@@ -1,0 +1,1 @@
+document.getElementById("a").innerHTML="WELCOME TO EXTERNAL JAVA SCRIPT";

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Document</title>
+</head>
+<body>
+    <script>
+        function trianglearea()
+        {
+            var base = 5
+            var height= 8
+            document.write("the triangle area is= "+1/2*base*height+"<br>")
+        }
+        trianglearea()
+        function circlearea()
+        {
+            var radius = 2.5
+            document.write("the circle area is= "+3.145*radius*radius+"<br>")
+        }
+        circlearea()
+        function squarearea()
+        {
+            var length= 10
+            var height=10
+            document.write("the squarearea is= "+length*height+"<br>")
+        }
+        squarearea()
+        function area()
+        {
+           
+            document.write("<br>"+"<br>"+"the final empty space area is= "+squarearea()-circlearea()-trianglearea())
+        }
+        area()
+    </script>
+</body>
+</html>

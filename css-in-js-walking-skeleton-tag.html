@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+    #b{
+        position: absolute;
+        bottom: 10px;
+    }
+    #a{
+        width: 200px;
+        height: 100px;
+    }
+</style>
+</head>
+<body onkeydown="jump()" onkeyup="nojump()">
+    <marquee id="b" direction="right" scrollamount="20">
+        <img src="./walking.gif" id="a">
+    </marquee>
+    <script>
+         function jump()
+        {
+            document.getElementById("b").style.bottom="80px"
+        }
+
+        function nojump()
+        { 
+            document.getElementById("b").style.bottom="0px"
+        }
+    </script>
+</body>
+</html>
